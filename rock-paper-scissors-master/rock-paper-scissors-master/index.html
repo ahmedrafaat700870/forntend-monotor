@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Frontend Mentor | Rock, Paper, Scissors</title>
+    <div class="game">
+        <div class="container">
+            <div class="game-heder">
+                <div class="game-titel">
+                    <span class="game-name">rock</span>
+                    <span class="game-name">pepare</span>
+                    <span class="game-name">sicssors</span>
+                    <span class="game-name">lizard</span>
+                    <span class="game-name">spock</span>
+                </div>
+                <div class="game-score">
+                    <span class="scoring">score</span>
+                    <span data-score="0" class="number-score"></span>
+                </div>
+            </div>
+            <div class="game-content" style="display:1 ;">
+                <div class="background-img">
+                    <img class="game-content-background" src="images/bg-pentagon.svg" alt="">
+                </div>
+                <div class="imges">
+                    <div data-comper="0" data-game="lizard" src="images/icon-lizard.svg"><img src="images/icon-lizard.svg" alt=""></div>
+                    <div data-comper="1" data-game="paper" src="images/icon-paper.svg"><img src="images/icon-paper.svg" alt=""></div>
+                    <div data-comper="2" data-game="rock" src="images/icon-rock.svg"><img src="images/icon-rock.svg" alt=""></div>
+                    <div data-comper="3" data-game="scissors" src="images/icon-scissors.svg"><img src="images/icon-scissors.svg" alt=""></div>
+                    <div data-comper="4" data-game="spock" src="images/icon-spock.svg"><img src="images/icon-spock.svg" alt=""></div>
+                </div>
+            </div>
+            <div class="choice" style="display: none ;">
+                <div class="your-choice">
+                    <h3>your picked</h3>
+                    <img class="" id="your-choice" src="" alt="">
+                </div>
+                <div class="res">
+                    <h3 class="res-res">you win</h3>
+                    <button class="res-btn">play again</button>
+                </div>
+                <div class="com-choice">
+                    <h3>the house picked</h3>
+                    <img class="" id="com-choice" src="" alt="">
+                </div>
+            </div>
+            <button class="button">rulse</button>
+            <div style="display: none;" data-open="false" class="rulse">
+                <div class="rulse-bonus">
+                    <div class="icon-close">
+                        <h3>rulse</h3>
+                        <img id="close" src="images/icon-close.svg" alt="">
+                    </div>
+                    <img class="img-main-rulse" src="images/image-rules-bonus.svg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Score
+  Rules
+
+  You Picked
+  The House Picked
+
+  You Win
+  You Lose
+
+  Play Again -->
+</head>
+
+<body>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
